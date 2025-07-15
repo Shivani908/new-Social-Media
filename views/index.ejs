@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('partials/header')%>
+  <!--  -->
+  <%- include('partials/nav')%>
+    <!--  -->
+    <div class=" rounded-xl w-[100%] py-[14%]  m-auto" style="background-image: url(https://images7.alphacoders.com/108/thumb-1920-1089110.jpg); ">
+      <h1 class="text-center hover:text-gray-300 text-8xl font-extrabold text-white">This is Homepage</h1>
+
+      <p class="flex justify-center gap-x-5 mt-10 ">
+        <a class="hover:bg-gray-600 rounded text-white py-3 px-5 bg-gray-800" href="/login">Continue Surfing</a>
+        <a class=" hover:bg-gray-600 rounded text-white py-3 px-5 bg-gray-800" href="/register">Start Your Journey
+          Today</a>
+
+      </p>
+    </div>
+    <!--  -->
+    <%- include('partials/footer')%>
